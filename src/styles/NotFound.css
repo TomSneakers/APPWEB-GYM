@@ -1,0 +1,13 @@
+.titre404 {
+
+    font-size: 8rem;
+    font-weight: 900;
+    color: transparent;
+    background-image: url("../assets/hompage.jpeg");
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeInDown 1s ease;
+    padding: 5rem 0;
+
+}
