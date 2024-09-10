@@ -57,7 +57,6 @@ export const authService = {
             throw new Error(error.message || "An unknown error occurred");
         }
     },
-    // to git here
     getUserDetails: async () => {
         try {
             const userId = localStorage.getItem("userId");
