@@ -47,7 +47,11 @@ const TeamSection = () => {
                 src="/public/nino.jpg"
                 alt="Nino Herran"
                 className="card-img-top img-fluid"
-                style={{ height: "300px", objectFit: "cover" }}
+                style={{
+                  height: "300px",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                }}
               />
               <div className="card-body">
                 <h3 className="card-title">NINO HERRAN</h3>
@@ -73,7 +77,6 @@ const TeamSection = () => {
                 style={{
                   height: "300px",
                   objectFit: "cover",
-                  objectPosition: "top",
                 }}
               />
               <div className="card-body">
