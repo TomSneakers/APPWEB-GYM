@@ -1,0 +1,127 @@
+/* Charte Graphique GymUnity */
+
+/* Couleurs principales */
+:root {
+    --orange: #FFA500;
+    --blue-dark: #004080;
+    --white: #F0F0F0;
+    --green-lemon: #E2F163;
+}
+
+/* Background principal */
+body {
+    background-color: var(--white);
+    /* Simplicité, pureté */
+    color: var(--blue-dark);
+    /* Texte principal en bleu foncé pour la confiance et la lisibilité */
+    font-family: 'Arial', sans-serif;
+}
+
+.card1 {
+    height: 600px !important;
+}
+
+.section_qui_sommes_nous {
+    background-color: var(--blue-dark);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--orange);
+    /* Boutons avec l'orange pour l'énergie et l'appel à l'action */
+    border: none;
+    color: var(--white);
+    /* Texte blanc sur fond orange */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-dark);
+    /* Survol des boutons en bleu foncé pour un contraste visible */
+}
+
+/* Titres */
+
+h3 {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--green-lemon);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--green-lemon);
+}
+
+.titre_qui_sommes_nous {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+/* Section spéciale (ex : Tarifs) */
+.section-tarifs {
+    background-color: var(--white);
+    /* Section blanche pour contraste avec les éléments */
+    padding: 40px 0;
+}
+
+.section-tarifs .card {
+    background-color: var(--white);
+    border: 1px solid var(--blue-dark);
+    /* Contours subtils en bleu foncé */
+}
+
+.section-tarifs .card:hover {
+    background-color: var(--orange);
+    /* Changement de couleur au survol pour attirer l'attention */
+    color: var(--white);
+}
+
+/* Footer */
+footer {
+    background-color: var(--blue-dark);
+    /* Footer en bleu foncé pour la stabilité */
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: var(--blue-dark);
+    /* Liens en bleu foncé */
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange);
+    /* Survol des liens en orange */
+}
+
+/* Bordures et accentuation */
+.border-green {
+    border: 2px solid var(--green-lemon);
+    /* Utilisation du vert citron pour des bordures ou des détails */
+}
+
+.highlight-green {
+    color: var(--green-lemon);
+    /* Utilisation pour des textes ou éléments à accentuer */
+}

@@ -3,7 +3,7 @@ import "../styles/NotFound.css";
 const NotFound = () => {
   return (
     <div className="container">
-      <h1 className="titre404">404 Not Found</h1>
+      <h1 className="titre404">Comming soon</h1>
     </div>
   );
 };
