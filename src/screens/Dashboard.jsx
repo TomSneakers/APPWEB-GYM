@@ -2,6 +2,8 @@ import CircularProgress from "../components/CircularProgress";
 import { useState, useEffect } from "react";
 import { FetchRequest } from "../services/fetchRequest";
 import { toast } from "react-toastify";
+import {Heading} from "@chakra-ui/react";
+import ClientList from "../components/ClientList.jsx";
 
 export default function Dashboard() {
   const [userLevel, setUserLevel] = useState(null);
@@ -50,7 +52,6 @@ export default function Dashboard() {
     return <p>Chargement...</p>;
   }
 
-  // Appliquer la couleur verte si le niveau est 3 et le pourcentage est 100%
   const isLevelThree = userLevel === 3;
   const clientCount = isLevelThree ? 100 : clients;
 
@@ -62,6 +63,7 @@ export default function Dashboard() {
         totalClients={totalClients}
         isLevelThree={isLevelThree}
       />
+      <ClientList/>
     </div>
   );
 }
